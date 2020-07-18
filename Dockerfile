@@ -60,3 +60,10 @@ RUN mkdir Geant4; \
           -DGEANT4_INSTALL_DATA=ON /opt/Geant4/geant4.${G4_VERSION}; \
     make -j4; \
     make install; \
+    export RUNLEVEL=3; \
+    export XDG_RUNTIME_DIR=/tmp/runtime-root; \
+    export G4PARTICLEXSDATA=/opt/Geant4/install/share/Geant4-10.5.1/data/G4PARTICLEXS1.1; \
+    export G4LEVELGAMMADATA=/opt/Geant4/install/share/Geant4-10.5.1/data/PhotonEvaporation5.3; \
+    export G4LEDATA=/opt/Geant4/install/share/Geant4-10.5.1/data/G4EMLOW7.7; \
+    export G4ENSDFSTATEDATA=/opt/Geant4/install/share/Geant4-10.5.1/data/G4ENSDFSTATE2.2; \
+    export G4NEUTRONHPDATA=/opt/Geant4/install/share/Geant4-10.5.1/data/G4NDL4.5
