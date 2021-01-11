@@ -1,1 +1,2 @@
-#docker-Geant4
+Geant4 ver10.05.p01がインストールされたcentos7を生成するためのdockerfile
+
